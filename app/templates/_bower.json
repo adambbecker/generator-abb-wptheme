@@ -1,0 +1,7 @@
+{
+  "name": "<%= _.slugify(themeTitle) %>",
+  "version": "0.0.1",
+  "dependencies": {
+    "underscore": "~1.5.2"
+  }
+}

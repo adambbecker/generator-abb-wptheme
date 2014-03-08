@@ -1,0 +1,34 @@
+/*================================================================================
+
+	Theme Name: <%= themeTitle %>
+	Theme URI: <%= authorUrl %>
+	Description: 
+	Author: <%= authorName %>
+	Author URI: <%= authorUrl %>
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0.0
+	
+	All files, unless otherwise stated, are released under the GNU General Public 
+	License version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+==================================================================================
+
+	0.  CSS Normalize
+	1.  General Set Up & Type
+
+==================================================================================*/
+
+@import "vars.scss";
+@import "mixins.scss";
+
+/*--------------------------------------------------------------------------------*/
+/*	0.  CSS Normalize - insert your preferred reset below
+/*--------------------------------------------------------------------------------*/
+@import "normalize.scss";
+
+
+/*--------------------------------------------------------------------------------*/
+/*	1.  General Set Up & Type
+/*--------------------------------------------------------------------------------*/
+@import "base.scss";

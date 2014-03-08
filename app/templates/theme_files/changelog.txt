@@ -1,0 +1,5 @@
+*** <%= themeTitle %> Changelog ***
+
+Some future date - Version 1.0
+	
+	* First Release
