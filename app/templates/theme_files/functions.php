@@ -66,7 +66,15 @@ update_option( 'embed_size_w', 654 );
 */
 
 	/* Custom Header / Background ------------------------------------------------*/
-	add_theme_support( 'custom-background', array( 'default-color' => 'ffffff' ) );
+	// add_theme_support( 'custom-background', array( 'default-color' => 'ffffff' ) );
+
+	// Enable support for HTML5 markup.
+	add_theme_support( 'html5', array(
+		'comment-list',
+		'search-form',
+		'comment-form',
+		'gallery',
+	) );
 
 	/* Blogroll Support ----------------------------------------------------------*/
 	/*
@@ -126,7 +134,9 @@ wp_register_script('example', get_template_directory_uri() . '/assets/js/example
 	/* Javascript - enqueues -----------------------------------------------------*/
 	$site_dep = array('jquery', 'modernizr', 'lib');
 	wp_enqueue_script('site', get_template_directory_uri() . '/assets/js/site.js', $site_dep, '1.0.0', true);
-	wp_enqueue_script( 'comment-reply' ); // required for threaded comments
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 
 	// localize_script allows for javascript to access variables normally accessed with php
 	/*

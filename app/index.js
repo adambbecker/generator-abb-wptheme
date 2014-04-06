@@ -70,6 +70,7 @@ AbbWpthemeGenerator.prototype.app = function app() {
   this.mkdir('assets/js/lib');
   this.mkdir('assets/includes');
   this.mkdir('assets/includes/widgets');
+  this.mkdir('languages');
 
   // Main Build files
   this.copy('_package.json', 'package.json');
@@ -107,6 +108,7 @@ AbbWpthemeGenerator.prototype.app = function app() {
   // Extras
   this.template('theme_files/changelog.txt', 'changelog.txt');
   this.template('README.md', 'README.md');
+  this.copy('theme_files/lang_readme.txt', 'languages/readme.txt');
 };
 
 AbbWpthemeGenerator.prototype.projectfiles = function projectfiles() {
