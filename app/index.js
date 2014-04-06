@@ -70,24 +70,24 @@ AbbWpthemeGenerator.prototype.app = function app() {
   this.mkdir('assets/js/lib');
   this.mkdir('assets/includes');
   this.mkdir('assets/includes/widgets');
-  
+
   // Main Build files
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
   this.copy('Gruntfile.js', 'Gruntfile.js');
-  
+
   // Stylesheet files
   this.copy('theme_files/assets/css/custom.css', 'assets/css/custom.css');
-  this.copy('theme_files/assets/scss/normalize.scss', 'assets/scss/normalize.scss');
+  this.copy('theme_files/assets/scss/reset.scss', 'assets/scss/reset.scss');
   this.copy('theme_files/assets/scss/vars.scss', 'assets/scss/vars.scss');
   this.copy('theme_files/assets/scss/mixins.scss', 'assets/scss/mixins.scss');
   this.copy('theme_files/assets/scss/base.scss', 'assets/scss/base.scss');
   this.template('theme_files/assets/scss/style.scss', 'assets/scss/style.scss');
-  
+
   // Javascript files (site not build)
   this.copy('theme_files/assets/js/site.js', 'assets/js/site.js');
   this.template('theme_files/assets/js/theme-customizer.js', 'assets/js/theme-customizer.js');
-  
+
   // Theme files
   this.copy('theme_files/header.php', 'header.php');
   this.copy('theme_files/footer.php', 'footer.php');

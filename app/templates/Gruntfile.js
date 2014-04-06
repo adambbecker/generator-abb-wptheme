@@ -107,9 +107,9 @@ grunt.loadNpmTasks('grunt-contrib-mincss');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-modernizr');
 
-grunt.registerTask('lib', [ 'uglify', 'modernizr' ]);
 grunt.registerTask('dev', [ 'sass', 'autoprefixer' ]);
-grunt.registerTask('prod', [ 'mincss' ]);
+grunt.registerTask('setup', [ 'uglify', 'modernizr', 'dev' ]);
+grunt.registerTask('prod', [ 'setup', 'mincss' ]);
 grunt.registerTask('default', [ 'dev', 'watch' ]);
 
 };

@@ -2,14 +2,14 @@
 
 	Theme Name: <%= themeTitle %>
 	Theme URI: <%= authorUrl %>
-	Description: 
+	Description:
 	Author: <%= authorName %>
 	Author URI: <%= authorUrl %>
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	Version: 1.0.0
-	
-	All files, unless otherwise stated, are released under the GNU General Public 
+
+	All files, unless otherwise stated, are released under the GNU General Public
 	License version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
 
 ==================================================================================
@@ -23,9 +23,9 @@
 @import "mixins.scss";
 
 /*--------------------------------------------------------------------------------*/
-/*	0.  CSS Normalize - insert your preferred reset below
+/*	0.  CSS Reset - insert your preferred reset below
 /*--------------------------------------------------------------------------------*/
-@import "normalize.scss";
+@import "reset.scss";
 
 
 /*--------------------------------------------------------------------------------*/
