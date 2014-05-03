@@ -120,8 +120,9 @@ add_action( 'widgets_init', '<%= _.slugify(fnPrefix) %>_reg_sidebars' );
 function <%= _.slugify(fnPrefix) %>_enqueues() {
 
 	/* Stylesheets ---------------------------------------------------------------*/
-	wp_register_style('customcss', get_template_directory_uri() . '/assets/css/custom.css');
-	wp_enqueue_style('customcss');
+	wp_enqueue_style('<%= _.slugify(fnPrefix) %>_style', get_stylesheet_uri());
+	wp_register_style('<%= _.slugify(fnPrefix) %>_customcss', get_template_directory_uri() . '/assets/css/custom.css');
+	wp_enqueue_style('<%= _.slugify(fnPrefix) %>_customcss');
 
 	/* Javascript - registers ----------------------------------------------------*/
 	wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/modernizr.js');

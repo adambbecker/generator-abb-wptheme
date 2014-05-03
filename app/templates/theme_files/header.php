@@ -23,7 +23,6 @@
 	<title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
