@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 
 		sass: {
 	    main: {
-	      options: { outputStyle: 'expanded' },
+	      options: { style: 'expanded' },
 	      files: { 'style.css':'assets/scss/style.scss' }
 	    }
 	  },
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 
 	  modernizr: {
 
-			dist {
+			dist: {
 				// [REQUIRED] Path to the build you're using for development.
 				'devFile' : 'assets/js/lib/modernizr-dev.js',
 
